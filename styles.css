@@ -1,0 +1,14 @@
+body {
+  width: 68%;
+  margin: 40px auto 0;
+  background-color: rgba(218, 219, 219, 0.513);
+}
+@media only screen and (max-width: 767px) {
+  body {
+    margin: 0 auto;
+    width: 90%;
+  }
+  #money {
+    height: 300px !important;
+  }
+}

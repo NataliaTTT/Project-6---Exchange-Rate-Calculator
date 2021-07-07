@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Exchange Rate Calculator</title>
+  </head>
+  <body>
+    <div
+      id="money"
+      class="container-fluid text-sm-center p-5 bg-image rounded-3"
+      style="background: url('valuta.jpg') no-repeat center; height: 350px;"
+    >
+      <!-- bg-light is background color & p-5 is padding -->
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+        <div class="text-white">
+          <h1 class="display-2 m-3">Exchange Rate Calculator</h1>
+          <h4 class="lead pb-3">
+            Choose the currency and the amounts to get the exchange rate
+          </h4>
+        </div>
+      </div>
+    </div>
+    <!--Form for base currency-->
+    <div class="row m-4  justify-content-start">
+      <label for="currency-1" class="col-sm-3 mt-3 col-form-label text-end">Choose the currency:
+      </label>
+      <div class="col-sm-3">
+        <select class="form-select m-3" aria-label="Choose the currency" id="currency-1">
+          
+          <option >USD</option>
+          <option >EUR</option>
+          <option >MDL</option>
+          </select>
+        </select>
+      </div>
+    <label for="amount" class="col-sm-3 mt-3 col-form-label text-end">AMOUNT:
+    </label>
+    <div class="col-sm-2 form-outline m-3">            
+        <input type="number" id="amount" class="form-control" />    
+     </div>
+  </div>
+<!--Swap button-->
+  <div class="row m-4 ms-5 justify-content-evenly">
+    <div class="col-sm-2 ">
+    <button
+     id="swap"
+      type="button"
+      class="btn btn-success ms-3 mt-3"
+      data-bs-toggle="button"
+      autocomplete="off"
+    >
+      Swap
+    </button>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-outline m-3">
+        <input type="text" id="rate" class="form-control" />
+      </div>
+    </div>
+  </div>
+
+  <div class="row m-4  justify-content-start">
+    <label for="currency-2" class="col-sm-3 mt-3 col-form-label text-end">Choose the currency:
+    </label>
+    <div class="col-sm-3">
+      <select class="form-select m-3" aria-label="Choose the currency" id="currency-2" required>
+        <option>MDL</option>
+        <option>EUR</option>
+        <option >USD</option>
+        </select>
+      </select>
+    </div>
+  <label for="result" class="col-sm-3 mt-3 col-form-label text-end">RESULT:
+  </label>
+  <div class="col-sm-2 form-outline m-3">            
+      <input type="number" id="result" class="form-control" />  
+   </div>
+   
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
